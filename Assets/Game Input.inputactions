@@ -1,0 +1,105 @@
+{
+    "name": "Game Input",
+    "maps": [
+        {
+            "name": "InGame",
+            "id": "e7f12014-598b-494f-a6b0-7e306ded6de1",
+            "actions": [
+                {
+                    "name": "StepCounter",
+                    "type": "Value",
+                    "id": "12fa750c-73a1-4982-af83-7e1e011bfedb",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "AccelerationCounter",
+                    "type": "Value",
+                    "id": "d77d1927-0ab1-4f2a-937f-c91a163b8a71",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "AttitudeSensor",
+                    "type": "Value",
+                    "id": "fea8232b-6f38-4a59-a7d5-7140d221b8c3",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "GryroSensor",
+                    "type": "Value",
+                    "id": "d417ebb2-01a3-4945-adc3-4d83034dbd3a",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "51ec9900-5ed9-48b7-9dd7-258c3897495c",
+                    "path": "<StepCounter>/stepCounter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "StepCounter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f9636d51-3cc2-4e7d-b05d-1f1b10dab728",
+                    "path": "<Sensor>/stepCounter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "StepCounter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f3cc97d8-9952-422b-b926-4aed8988f441",
+                    "path": "<LinearAccelerationSensor>/acceleration",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AccelerationCounter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b229bbae-b0cb-44be-97c6-e16b48ef17dc",
+                    "path": "<AttitudeSensor>/attitude",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AttitudeSensor",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6daa2dd1-6aa4-4323-bfca-3e48f6429137",
+                    "path": "<Gyroscope>/angularVelocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GryroSensor",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
